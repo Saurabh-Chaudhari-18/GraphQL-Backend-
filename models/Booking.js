@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const bookingSchema = new mongoose.Schema({
   title: String,
@@ -9,12 +9,12 @@ const bookingSchema = new mongoose.Schema({
   organization: String,
   phone: String,
   destinationCountry: String,
-  departureDate: Date,
-  returnDate: Date,
+  departureDate: String,
+  returnDate: String,
   classOfService: String,
   hotel: String,
   airline: String,
-  additionalInfo: String
+  additionalInfo: String,
 });
 
-module.exports = mongoose.model('Booking', bookingSchema);
+module.exports = mongoose.model("Booking", bookingSchema);
